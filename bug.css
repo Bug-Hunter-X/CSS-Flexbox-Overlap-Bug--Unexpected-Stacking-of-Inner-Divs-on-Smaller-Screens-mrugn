@@ -1,0 +1,14 @@
+The following CSS code snippet is designed to create a responsive layout using flexbox. However, it introduces an uncommon error where the inner divs unexpectedly overlap when the screen width shrinks below a certain point.  The expected behavior is for the inner divs to wrap to the next line when there's insufficient horizontal space, but instead they stack on top of each other. 
+
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  width: 50%;
+  background-color: lightblue;
+  padding: 10px;
+  box-sizing: border-box;
+}
+```
