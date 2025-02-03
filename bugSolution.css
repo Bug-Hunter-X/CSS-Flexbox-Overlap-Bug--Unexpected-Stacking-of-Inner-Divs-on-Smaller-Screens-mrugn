@@ -1,0 +1,15 @@
+The solution addresses the overlap issue by adding the `flex-wrap: wrap;` property to the container. This explicitly tells the flexbox to wrap the items onto multiple lines when there isn't enough horizontal space.  We also modify the `width` to use `flex-basis` instead which helps with responsiveness.
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: 50%;
+  background-color: lightblue;
+  padding: 10px;
+  box-sizing: border-box;
+}
+```
